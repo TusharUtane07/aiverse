@@ -23,7 +23,7 @@ const QandA = () => {
   const doStuff = async () => {
     let object = { ...option, prompt: input };
     const response = await openai.createCompletion(object);
-    console.log(response);
+    // console.log(response);
     setResult(response.data.choices[0].text);
   };
 

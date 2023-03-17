@@ -13,6 +13,12 @@ const Home = () => {
       <NavLink to='/translatetosimple'>
         <div>Translates difficult text into simpler concepts</div>
       </NavLink>
+      <NavLink to='/convetjstopy'>
+        <div>Converts Javascript code to Python code</div>
+      </NavLink>
+      <NavLink to='/jsoneliner'>
+        <div>Converts Javascript function to one line code</div>
+      </NavLink>
     </div>
   );
 };
