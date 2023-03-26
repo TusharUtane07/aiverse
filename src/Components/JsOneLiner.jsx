@@ -13,7 +13,7 @@ const JsOneLiner = () => {
     const convertIt = async () => {
         const response = await openai.createCompletion({
             model: "code-davinci-002",
-            prompt: "Use list comprehension to convert this into one line of JavaScript: "+ input,
+            prompt: `Use list comprehension to convert this into one line of JavaScript:  ${input} JavaScript one line version:`,
             temperature: 0,
             max_tokens: 60,
             top_p: 1.0,
@@ -24,7 +24,7 @@ const JsOneLiner = () => {
           setResult(response.data.choices[0].text)
     }
 
-    const sample = 'dogs.forEach((dog) => { car.push(dog); });'
+    const sample = " dogs.forEach((dog) => { car.push(dog); }); "
   return (
     <div>
         Converts Javascript Function into One line code.
